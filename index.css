@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body {
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.3rem;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+}
+.hero::before {    
+        content: "";
+        background-image: url('img-fondo.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.7;
+}
+.flex--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1,
+p,
+nav {
+    position: relative;
+    color: white;
+}
+.hero > * {
+    margin: 2rem auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+  }
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+h1,
+p {
+    max-width: 50%;
+}
+img {
+    position: relative;
+    height: 250px;
+}
+.logo-bg {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa {
+    color: gray;
+}
